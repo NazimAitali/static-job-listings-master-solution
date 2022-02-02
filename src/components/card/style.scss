@@ -9,7 +9,7 @@
   padding-top: 8.7em;
 }
 .Jobs-card {
-  @include ElementParameters(87.4%, 32.5%, flex, unset, center, column);
+  @include ElementParameters(87.4%, 8.65%, flex, unset, center, column);
   background-color: $White;
   border-radius: 0.3em;
   margin-bottom: 2.6em;
@@ -20,7 +20,7 @@
   transition: height 0.2s ease-in;
 }
 .Height {
-  height: 36.5%;
+  height: 8.9%;
 }
 .Featured-style {
   border-left: 5px solid $Desaturated-Dark-Cyan;
@@ -123,7 +123,7 @@
   }
 
   .Jobs-card {
-    @include dimension(77.1%, 19%);
+    @include dimension(77.1%, 8.1%);
     margin-bottom: 1.6em;
     &:hover {
       width: 78%;

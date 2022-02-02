@@ -3,17 +3,19 @@
 @import "./styles/reset.scss";
 .App {
   @include dimension(100vw, 100vh);
+  //background-image: url(./images/mobile-with-filters.jpg);
   overflow-x: hidden;
   scrollbar-width: thin;
   font-family: $Spartan;
   scrollbar-color: transparent transparent;
+  background-color: $Light-Grayish-Cyan-v1;
 }
 .Container {
-  @include ElementParameters(100%, 1000px, flex, unset, center, column);
+  @include ElementParameters(100%, 3176px, flex, unset, center, column);
   position: relative;
 }
 .Header {
-  @include ElementParameters(100%, 15.6%, flex, unset, center, column);
+  @include ElementParameters(100%, 4.9%, flex, unset, center, column);
   background-image: url(./images/bg-header-mobile.svg);
   background-color: $Desaturated-Dark-Cyan;
   position: sticky;
@@ -21,22 +23,22 @@
   z-index: 2;
 }
 main {
-  @include ElementParameters(100%, 84.4%, flex, unset, center, column);
+  @include ElementParameters(100%, 95.1%, flex, unset, center, column);
   overflow-y: auto;
   scrollbar-width: thin;
 }
 
 @media (min-width: $Desktop) {
-  .Container {
-    height: 1024px;
-  }
   .Header {
-    @include ElementParameters(100%, 15.2%, flex, unset, center, column);
+    @include ElementParameters(100%, 7.5%, flex, unset, center, column);
     background-image: url(./images/bg-header-desktop.svg);
     background-size: cover;
   }
+  .Container {
+    height: 2088px;
+  }
   main {
-    @include ElementParameters(100%, 84.8%, flex, unset, center, column);
+    @include ElementParameters(100%, 92.5%, flex, unset, center, column);
   }
 }
 @import "./components/card/style.scss";
