@@ -3,7 +3,6 @@
 @import "./styles/reset.scss";
 .App {
   @include dimension(100vw, 100vh);
-  //background-image: url(./images/mobile-with-filters.jpg);
   overflow-x: hidden;
   scrollbar-width: thin;
   font-family: $Spartan;

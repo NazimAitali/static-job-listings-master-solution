@@ -1,7 +1,7 @@
 @import "../../styles/libs/mixin.scss";
 @import "../../styles/libs/variables.scss";
 .Filter-card {
-  @include ElementParameters(100%, 5.7%, flex, unset, center, column);
+  @include ElementParameters(100%, 12%, flex, unset, center, column);
   top: 7.5em;
   position: fixed;
   z-index: 5;
@@ -70,7 +70,7 @@
     @include dimension(77%, 100%);
   }
   .Filter-card {
-    @include ElementParameters(100%, 3.5%, flex, unset, center, column);
+    @include ElementParameters(100%, 7.2%, flex, unset, center, column);
     top: 7.5em;
   }
   .Filter {
