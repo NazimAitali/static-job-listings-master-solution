@@ -1,0 +1,209 @@
+@import "../../styles/libs/mixin.scss";
+@import "../../styles/libs/variables.scss";
+.Cards {
+  @include dimension(100%, 100%);
+  position: relative;
+  padding-top: 3.5em;
+}
+.Top {
+  padding-top: 8.7em;
+}
+.Jobs-card {
+  @include ElementParameters(87.4%, 32.5%, flex, unset, center, column);
+  background-color: $White;
+  border-radius: 0.3em;
+  margin-bottom: 2.6em;
+  box-shadow: 0px 0px 34px 2px rgba($Desaturated-Dark-Cyan, 0.3);
+  border-left: 5px solid transparent;
+  margin-left: auto;
+  margin-right: auto;
+  transition: height 0.2s ease-in;
+}
+.Height {
+  height: 36.5%;
+}
+.Featured-style {
+  border-left: 5px solid $Desaturated-Dark-Cyan;
+}
+.Jobs-content {
+  @include ElementParameters(100%, 100%, flex, center, center, column);
+  position: relative;
+}
+.Profil {
+  @include ElementParameters(88%, 53%, flex, unset, center, column);
+  border-bottom: 1px solid gray;
+}
+.Logo {
+  @include ElementParameters(100%, 31%, flex, center, flex-start, column);
+  position: absolute;
+  top: -2.5em;
+  left: 1.2em;
+}
+.Img {
+  @include dimension(3em, 3em);
+  background-size: cover;
+  background-position: center;
+}
+.Company {
+  @include ElementParameters(100%, 41%, flex, flex-start, flex-end, row);
+}
+.Company-title {
+  @include ElementParameters(unset, 40%, flex, flex-start, flex-end, row);
+  font-size: clamp(0.5em, 3.5vw, 0.8em);
+  margin-right: 1.4em;
+  font-weight: 700;
+  color: $Desaturated-Dark-Cyan;
+}
+.New {
+  @include ElementParameters(17.5%, 42%, flex, center, flex-end, row);
+  font-size: clamp(0.5em, 3vw, 0.8em);
+  font-weight: 700;
+  color: $White;
+  background-color: $Desaturated-Dark-Cyan;
+  border-radius: 1em;
+  margin-right: 3%;
+}
+.Featured {
+  @include ElementParameters(28%, 42%, flex, center, flex-end, row);
+  font-size: clamp(0.5em, 3vw, 0.8em);
+  font-weight: 700;
+  color: $White;
+  background-color: $Very-Dark-Grayish-Cyan;
+  border-radius: 1em;
+}
+.Position {
+  @include ElementParameters(100%, 29%, flex, flex-start, center, row);
+  font-size: clamp(0.5em, 4vw, 1em);
+  font-weight: 700;
+  cursor: pointer;
+}
+.Other-info {
+  @include ElementParameters(100%, 30%, flex, flex-start, flex-start, row);
+  font-size: clamp(0.5em, 3.3vw, 0.8em);
+  font-weight: 600;
+  color: rgb(192, 192, 192);
+}
+.PostedAt {
+  margin-right: 0.5em;
+  @include ElementParameters(unset, 61%, flex, center, flex-end, row);
+}
+.Contract {
+  margin-right: 0.2em;
+  @include ElementParameters(unset, 61%, flex, center, flex-end, row);
+}
+.Location {
+  @include ElementParameters(unset, 61%, flex, center, flex-end, row);
+}
+.Languages {
+  @include ElementParameters(88%, 47%, flex, unset, center, row);
+}
+.Languages-content {
+  @include ElementParameters(100%, 81%, flex, flex-start, center, row);
+  flex-wrap: wrap;
+  margin-bottom: 0.4em;
+}
+.Language {
+  @include ElementParameters(auto, 27%, flex, center, center, row);
+  font-size: clamp(0.5em, 3.5vw, 0.8em);
+  font-weight: 600;
+  background-color: $Light-Grayish-Cyan-v1;
+  color: $Desaturated-Dark-Cyan;
+  margin-right: 1.6em;
+  padding: 2.2%;
+  border-radius: 0.3em;
+  cursor: pointer;
+  &:hover {
+    background-color: $Very-Dark-Grayish-Cyan;
+    color: $White;
+  }
+}
+@media (min-width: $Desktop) {
+  .Cards {
+    padding-top: 4.8em;
+  }
+
+  .Jobs-card {
+    @include dimension(77.1%, 19%);
+    margin-bottom: 1.6em;
+    &:hover {
+      width: 78%;
+      box-shadow: 0px 0px 50px 10px rgba($Desaturated-Dark-Cyan, 0.3);
+      transition: width 0.2s ease-in;
+    }
+  }
+  .Jobs-content {
+    flex-direction: row;
+  }
+  .Logo {
+    @include dimension(13.4%, 100%);
+    align-items: center;
+    position: unset;
+  }
+  .Img {
+    @include dimension(5.5em, 5.5em);
+    margin-left: 0.4em;
+  }
+  .Profil {
+    @include dimension(36.6%, 100%);
+    border-bottom: none;
+  }
+  .Company {
+    height: 37%;
+  }
+
+  .Company-title {
+    margin-right: 1.1em;
+    font-size: clamp(0.5em, 3.5vw, 0.87em);
+  }
+  .New {
+    width: 12.5%;
+    margin-right: 2%;
+    font-size: clamp(0.5em, 3vw, 0.7em);
+  }
+  .Featured {
+    width: 19.5%;
+    font-size: clamp(0.5em, 3vw, 0.7em);
+  }
+
+  .Position {
+    height: 30%;
+    font-size: clamp(1em, 4vw, 1.12em);
+  }
+  .Other-info {
+    height: 33%;
+    font-size: clamp(0.5em, 3.3vw, 0.87em);
+  }
+
+  .PostedAt {
+    align-items: flex-start;
+    margin-top: -0.2em;
+    margin-right: 0.9em;
+  }
+
+  .Contract {
+    align-items: flex-start;
+    margin-top: -0.2em;
+    margin-right: 0;
+  }
+  .Location {
+    align-items: flex-start;
+    margin-top: -0.2em;
+  }
+
+  .Languages {
+    @include dimension(50%, 100%);
+  }
+  .Languages {
+    justify-content: flex-end;
+  }
+  .Languages-content {
+    @include ElementParameters(80%, 100%, flex, flex-start, center, row);
+    margin-bottom: 0;
+    margin-top: 0.1em;
+  }
+  .Language {
+    height: 20%;
+    margin-right: 1.3em;
+    padding: 2%;
+  }
+}

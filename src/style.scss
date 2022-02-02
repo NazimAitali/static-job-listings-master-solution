@@ -1,0 +1,43 @@
+@import "./styles/libs/mixin.scss";
+@import "./styles/libs/variables.scss";
+@import "./styles/reset.scss";
+.App {
+  @include dimension(100vw, 100vh);
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  font-family: $Spartan;
+  scrollbar-color: transparent transparent;
+}
+.container {
+  @include ElementParameters(100%, 1000px, flex, unset, center, column);
+  position: relative;
+}
+header {
+  @include ElementParameters(100%, 15.6%, flex, unset, center, column);
+  background-image: url(./images/bg-header-mobile.svg);
+  background-color: $Desaturated-Dark-Cyan;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+main {
+  @include ElementParameters(100%, 84.4%, flex, unset, center, column);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+@media (min-width: $Desktop) {
+  .container {
+    height: 1024px;
+  }
+  header {
+    @include ElementParameters(100%, 15.2%, flex, unset, center, column);
+    background-image: url(./images/bg-header-desktop.svg);
+    background-size: cover;
+  }
+  main {
+    @include ElementParameters(100%, 84.8%, flex, unset, center, column);
+  }
+}
+@import "./components/card/style.scss";
+@import "./components/filter/style.scss";

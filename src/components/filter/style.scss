@@ -1,0 +1,96 @@
+@import "../../styles/libs/mixin.scss";
+@import "../../styles/libs/variables.scss";
+.Filter-card {
+  @include ElementParameters(100%, 12%, flex, unset, center, column);
+  top: 7.5em;
+  position: fixed;
+  z-index: 5;
+}
+.Filter-content {
+  @include ElementParameters(87%, 100%, flex, flex-start, center, row);
+  flex-wrap: wrap;
+  background-color: $White;
+  box-shadow: 0px 0px 34px 2px rgba($Desaturated-Dark-Cyan, 0.3);
+  border-radius: 0.3em;
+  position: unset;
+}
+.Filter {
+  @include ElementParameters(80%, 100%, flex, flex-start, flex-start, row);
+  padding: 1.2em 0em 0em 0.8em;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+.Tags-content {
+  @include ElementParameters(unset, 32%, flex, center, center, row);
+  margin-right: 0.2em;
+}
+.Tags {
+  @include ElementParameters(unset, 100%, flex, flex-start, center, row);
+  font-size: clamp(0.5em, 3.5vw, 0.8em);
+  font-weight: 600;
+  background-color: #effafa;
+  color: $Desaturated-Dark-Cyan;
+  margin-right: 0em;
+  padding: 1em;
+  border-top-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+}
+.Delete-tag {
+  @include dimension(unset, 100%);
+  background-image: url(../../images/icon-remove.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $Desaturated-Dark-Cyan;
+  border-top-right-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+  padding: 1em;
+  cursor: pointer;
+  &:hover {
+    background-color: $Very-Dark-Grayish-Cyan;
+  }
+}
+.Filter-btn {
+  @include ElementParameters(20%, 100%, flex, center, center, row);
+}
+.Filter-btn button {
+  font-size: clamp(0.5em, 3.5vw, 0.8em);
+  font-weight: 600;
+  color: $Very-Dark-Grayish-Cyan;
+  margin-right: 1.6em;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  &:hover {
+    text-decoration-line: underline;
+    color: $Desaturated-Dark-Cyan;
+  }
+}
+@media (min-width: $Desktop) {
+  .Filter-content {
+    @include dimension(77%, 50%);
+  }
+  .Filter-card {
+    @include ElementParameters(100%, 14.4%, flex, unset, center, column);
+    top: 7.5em;
+  }
+  .Filter {
+    padding: 1.9em 0em 0em 2.8em;
+  }
+  .Filter-btn {
+    justify-content: flex-end;
+  }
+  .Filter-btn button {
+    margin-right: 2.8em;
+  }
+  .Tags {
+    padding: 1.25em 0.5em;
+  }
+  .Tags-content {
+    margin-right: 1.2em;
+  }
+}
+@media (min-width: $LargeDesktop) {
+  .Filter-content {
+    height: 70%;
+  }
+}
