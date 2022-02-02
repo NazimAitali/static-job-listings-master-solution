@@ -90,7 +90,10 @@
   }
 }
 @media (min-width: $LargeDesktop) {
+  .Filter-card {
+    height: 10%;
+  }
   .Filter-content {
-    height: 70%;
+    height: 100%;
   }
 }
