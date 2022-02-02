@@ -40,8 +40,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className="container">
-        <header></header>
+      <div className="Container">
+        <div className="Header"></div>
         <main>
           <Filter
             filterList={filterList}

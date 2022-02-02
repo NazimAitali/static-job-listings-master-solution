@@ -24,7 +24,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://github.com/NazimAitali/static-job-listings-master-solution/blob/master/static-job-listings-master-solution%201440px.png)
+![](https://github.com/NazimAitali/static-job-listings-master-solution/blob/master/static-job-listings-master-solution%201440px%20SELECTED.png)
+![](https://github.com/NazimAitali/static-job-listings-master-solution/blob/master/static-job-listings-master-solution%20375px%20.png)
+![](https://github.com/NazimAitali/static-job-listings-master-solution/blob/master/static-job-listings-master-solution%20375px%20SELECTED.png)
 
 ### Links
 

@@ -8,11 +8,11 @@
   font-family: $Spartan;
   scrollbar-color: transparent transparent;
 }
-.container {
+.Container {
   @include ElementParameters(100%, 1000px, flex, unset, center, column);
   position: relative;
 }
-header {
+.Header {
   @include ElementParameters(100%, 15.6%, flex, unset, center, column);
   background-image: url(./images/bg-header-mobile.svg);
   background-color: $Desaturated-Dark-Cyan;
@@ -27,10 +27,10 @@ main {
 }
 
 @media (min-width: $Desktop) {
-  .container {
+  .Container {
     height: 1024px;
   }
-  header {
+  .Header {
     @include ElementParameters(100%, 15.2%, flex, unset, center, column);
     background-image: url(./images/bg-header-desktop.svg);
     background-size: cover;
